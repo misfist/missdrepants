@@ -1,0 +1,21 @@
+{
+  "name": "misfist/missdrepants-child",
+  "description": "Custom theme for missdrepants.com",
+  "keywords" : ["wordpress", "theme"],
+  "type" : "wordpress-theme",
+  "homepage": "https://github.com/misfist/missdrepants-child",
+  "license": "GPLv3",
+  "authors": [
+    {
+      "name": "Pea",
+      "homepage": "http://misfist.com"
+    }
+  ],
+  "dist": {
+    "type": "git",
+    "url": "https://github.com/misfist/missdrepants-child.git"
+  },
+  "require": {
+    "composer/installers": "v1.0.21"
+  },
+}
