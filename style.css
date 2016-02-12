@@ -1,6 +1,6 @@
 /*
-Theme Name: Miss Dre Pants Theme
-Theme URI: https://github.com/misfist/thegoldenbelle.com
+Theme Name: Miss Drepants Theme
+Theme URI: https://github.com/misfist/missdrepants-child
 Description: Child Theme for Loom
 Author: Pea
 Author URI: http://misfist.com
@@ -8,4 +8,4 @@ Template: loom
 Version: 1.0.0
 */
 
-@import url('../loom/style.css');
+/* Styles loaded from assets/css/style.css */

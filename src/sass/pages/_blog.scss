@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the blog page.
+// -----------------------------------------------------------------------------
+
+// .grid-blog.col2 .post {
+//     width: 50% !important;
+// }
+
+.blog {
+
+    .grid-blog.col2 {
+        .post {
+            width: 100%;
+        }
+    }
+
+    @media(min-width: 768px) {
+
+        .grid-blog.col2 .post {
+            width: 46.125%;
+        }
+
+    }
+}
+
+

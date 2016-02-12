@@ -1,8 +1,8 @@
 @charset 'UTF-8';
 
 /*
-Theme Name: The Golden Belle Salon Theme
-Theme URI: https://github.com/misfist/thegoldenbelle.com
+Theme Name: Miss Drepants Theme
+Theme URI: https://github.com/misfist/missdrepants-child
 Description: Child Theme for Loom
 Author: Pea
 Author URI: http://misfist.com
@@ -24,6 +24,7 @@ Version: 1.0.0
 // 3. Base stuff
 @import
   'base/base',
+  'base/bsgrid',
   'base/fonts',
   'base/typography',
   'base/helpers';
@@ -35,11 +36,14 @@ Version: 1.0.0
 
 // 5. Components
 @import
-  'components/buttons';
+  'components/buttons',
+  'components/plugins',
+  'components/widgets';
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/blog';
 
 // 7. Themes
 @import

@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+/**
+ * Simple Instagram 
+ */
+ul.si-widget {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        text-align: center;
+        width: 33%;
+        padding: 1px;
+
+        &:before {
+            content: none;
+        }
+        a {
+            
+            
+        }
+        img {
+            margin-bottom: 0;
+        }
+    }
+
+} 
+
+/**
+ * Search and Filter Widget
+ */
+.searchandfilter {
+    ul {
+        list-style: none;
+        margin-bottom: 0;
+        li {
+            padding-left: 0;
+            &:before {
+                content: none;
+            }
+        }
+    }
+}
