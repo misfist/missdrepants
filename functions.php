@@ -24,4 +24,9 @@ if(! function_exists( 'missdrepants_enqueue_styles' ) ) {
 
 }
 
+/**
+ * Theme Helpers
+ */
+include_once trailingslashit( get_stylesheet_directory() ) . 'inc/theme-helpers.php';
+
 ?>
