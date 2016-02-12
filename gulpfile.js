@@ -24,7 +24,7 @@ gulp.task( 'sass', function() {
 	} )
 	.pipe( plumber( { errorHandler: onError } ) )
 	.pipe( sass() )
-	.pipe( gulp.dest( '.' ) )
+	.pipe( gulp.dest( './assets/styles' ) )
 	.pipe( minifycss() )
 	.pipe( rename( { suffix: '.min' } ) )
 	.pipe( gulp.dest( './assets/styles' ) )
