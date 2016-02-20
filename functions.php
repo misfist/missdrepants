@@ -4,8 +4,7 @@ if(! function_exists( 'missdrepants_enqueue_styles' ) ) {
 
     function missdrepants_enqueue_styles() {
 
-        // Don't load Simply Instagram tooltips scripts and styles
-        wp_dequeue_script( 'jquery.tools.min-3.3.0.js' );
+        // Don't load Simply Instagram tooltips styles
         wp_dequeue_style( 'tooltipster' );
 
         // Don't load parent theme's Google Maps script
