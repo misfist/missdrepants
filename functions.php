@@ -4,6 +4,14 @@ if(! function_exists( 'missdrepants_enqueue_styles' ) ) {
 
     function missdrepants_enqueue_styles() {
 
+        // Don't load Simply Instagram tooltips scripts and styles
+        wp_dequeue_script( 'jquery.tools.min-3.3.0.js' );
+        wp_dequeue_style( 'tooltipster' );
+
+        // Don't load parent theme's Google Maps script
+        wp_dequeue_script( 'ebor-googlemapsapi' );
+        wp_dequeue_script( 'ebor-googlemapsapi' );
+
         $parent_main_style = 'ebor-style';
 
         $parent_styles = array(
