@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Theme Name: Miss Drepants Theme
 Theme URI: https://github.com/misfist/missdrepants-child
@@ -7,6 +8,13 @@ Author URI: http://misfist.com
 Template: loom
 Version: 1.0.0
 */
+@font-face {
+  font-family: 'font-awesome-social';
+  src: url("../fonts/font-awesome-social.eot?69939564");
+  src: url("../fonts/font-awesome-social.eot?69939564#iefix") format("embedded-opentype"), url("../fonts/font-awesome-social.woff?69939564") format("woff"), url("../fonts/font-awesome-social.ttf?69939564") format("truetype"), url("../fonts/font-awesome-social.svg?69939564#font-awesome-social") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 /**
  * Set up a decent box model on the root element
  */
@@ -82,7 +90,7 @@ a {
   padding-right: 15px; }
 
 @media (min-width: 1200px) {
-  .container {
+  .container, .aq-block-aq_blog_block {
     width: 1170px; }
   .col-lg-1 {
     float: left;
@@ -205,7 +213,7 @@ a {
   padding-left: 15px;
   padding-right: 15px; }
 
-.row {
+.row, .null-instagram-feed ul {
   margin-left: -15px;
   margin-right: -15px; }
 
@@ -675,7 +683,7 @@ body {
  * 2. Center it in the viewport
  * 3. Leave some space on the edges, especially valuable on small screens
  */
-.container {
+.container, .aq-block-aq_blog_block {
   max-width: 1200px;
   /* 1 */
   margin-left: auto;
@@ -716,6 +724,84 @@ body {
   position: absolute;
   width: 1px; }
 
+.btn,
+.btn-primary,
+.yikes-easy-mc-submit-button,
+.share .btn {
+  padding: 10px 20px;
+  border-radius: 0 !important;
+  background: #f461a8 !important;
+  border-color: #f461a8 !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .btn:hover,
+  .btn-primary:hover,
+  .yikes-easy-mc-submit-button:hover, .btn:focus,
+  .btn-primary:focus,
+  .yikes-easy-mc-submit-button:focus, .btn:active,
+  .btn-primary:active,
+  .yikes-easy-mc-submit-button:active {
+    background: #df1074 !important;
+    color: #fff !important;
+    text-decoration: none; }
+
+/**
+ * Revolution Slider
+ */
+.rev_slider {
+  text-align: center; }
+  .rev_slider .slider-headline {
+    font-size: 5rem;
+    font-weight: bold; }
+  .rev_slider .button {
+    display: inline-block;
+    background-color: #f461a8;
+    border-radius: 0;
+    padding: 6px 10px;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #fff;
+    color: #fff; }
+    .rev_slider .button:hover, .rev_slider .button:focus {
+      color: #fff;
+      text-decoration: none; }
+
+/**
+ * Blog Block
+ */
+/**
+ * Map
+ */
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden; }
+  .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important; }
+
+/**
+ * Instagram
+ */
+.null-instagram-feed ul li {
+  width: 33%;
+  display: inline-block;
+  margin-left: 0;
+  padding-left: 0; }
+  .null-instagram-feed ul li:before {
+    content: none; }
+
+/**
+ * Share Icons
+ */
+ul.instagram-pics {
+  padding: 0; }
+
 /**
  * Simple Instagram 
  */
@@ -744,9 +830,88 @@ ul.si-widget {
     .searchandfilter ul li:before {
       content: none; }
 
+[class^="fa-"]:before {
+  font-family: "font-awesome-social";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.fa-flickr:before {
+  content: '\e800'; }
+
+/* '' */
+.fa-digg:before {
+  content: '\e801'; }
+
+/* '' */
+.fa-dribbble:before {
+  content: '\e802'; }
+
+/* '' */
+.fa-paypal:before {
+  content: '\e803'; }
+
+/* '' */
+.fa-reddit:before {
+  content: '\e804'; }
+
+/* '' */
+.fa-vimeo-squared:before {
+  content: '\e805'; }
+
+/* '' */
+.fa-yelp {
+  border-color: #c41200 !important;
+  color: #c41200 !important;
+  /* '' */ }
+  .fa-yelp:before {
+    content: '\e806'; }
+
+a:hover .fa-yelp,
+a:focus .fa-yelp {
+  background-color: #ff3e2b !important;
+  color: #fff !important; }
+
+.fa-youtube:before {
+  content: '\e807'; }
+
+/* '' */
+.fa-wordpress:before {
+  content: '\e808'; }
+
+/* '' */
+.fa-youtube-play:before {
+  content: '\e809'; }
+
+/* '' */
 .blog .grid-blog.col2 .post {
   width: 100%; }
 
 @media (min-width: 768px) {
   .blog .grid-blog.col2 .post {
     width: 46.125%; } }
+
+.page img.size-full {
+  width: 100%;
+  height: auto; }
