@@ -1,3 +1,30 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+%button {
+    padding: 10px 20px;
+    border-radius: 0 !important;
+    background: $brand-color !important;
+    border-color: $brand-color !important;
+    color: $white !important;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+
+        background: darken($brand-color, 20%) !important;
+        color: $white !important;
+        text-decoration: none;
+
+    }
+}
+
+.btn,
+.btn-primary,
+.yikes-easy-mc-submit-button,
+.share .btn {
+    @extend %button;
+}
