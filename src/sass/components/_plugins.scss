@@ -1,6 +1,96 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
+// This file contains all styles related to plugin components.
 // -----------------------------------------------------------------------------
+
+/**
+ * Revolution Slider
+ */
+.rev_slider {
+    text-align: center;
+
+    .slider-headline {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+
+    .button {
+        display: inline-block;
+        background-color: $brand-color;
+        border-radius: 0;
+        padding: 6px 10px;
+        margin-right: auto;
+        margin-left: auto;
+        border: 1px solid $white;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+}
+
+/**
+ * Blog Block
+ */
+.aq-block-aq_blog_block {
+    @extend .container;
+}
+
+/**
+ * Map
+ */
+.google-maps {
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+/**
+ * Instagram
+ */
+.null-instagram-feed {
+
+    ul { 
+        @extend .list-unstyled;
+        @extend .row;
+        li {
+            width: 33%;
+            display: inline-block;
+
+            margin-left: 0;
+            padding-left: 0;
+
+            &:before {
+                content: none;
+            }
+
+        }
+    }
+}
+
+/**
+ * Share Icons
+ */
+.icon-s- {
+    @extend .icon-s-pinterest;
+}
+
+
+ul.instagram-pics {
+    padding: 0;
+}
+
 
 /**
  * Simple Instagram 
@@ -9,6 +99,7 @@ ul.si-widget {
     padding: 0;
     margin: 0;
     list-style: none;
+    //background-color: rgba(253,253,253,.4);
 
     li {
         display: inline-block;
@@ -45,3 +136,4 @@ ul.si-widget {
         }
     }
 }
+
