@@ -18,8 +18,8 @@ Version: 1.0.0
   'utils/mixins';
 
 // 2. Vendors
-// @import
-//   'vendor/normalize';
+@import
+  'base/font-awesome-social';
 
 // 3. Base stuff
 @import
@@ -38,7 +38,8 @@ Version: 1.0.0
 @import
   'components/buttons',
   'components/plugins',
-  'components/widgets';
+  'components/widgets',
+  'components/icons';
 
 // 6. Page-specific styles
 @import
