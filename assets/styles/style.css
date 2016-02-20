@@ -912,6 +912,6 @@ a:focus .fa-yelp {
   .blog .grid-blog.col2 .post {
     width: 46.125%; } }
 
-.page img.size-full {
+.page .post-content img.size-full {
   width: 100%;
   height: auto; }
