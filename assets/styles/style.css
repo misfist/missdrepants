@@ -765,8 +765,13 @@ body {
 
 .ccf-form-wrapper .ccf-form-complete {
   transition: background-color 0.5s ease;
-  padding: .5em;
-  background-color: #fef0f7; }
+  padding: 1em;
+  background-color: #f461a8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase; }
 
 /**
  * Revolution Slider

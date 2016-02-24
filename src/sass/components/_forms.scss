@@ -31,8 +31,13 @@
 
     .ccf-form-complete {
         transition: background-color 0.5s ease;
-        padding: .5em;
-        background-color: lighten($brand-color, 30%);
+        padding: 1em;
+        background-color: $brand-color;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $white;
+        text-transform: uppercase;
     }
 
 }
