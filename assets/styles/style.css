@@ -8,6 +8,13 @@ Author URI: http://misfist.com
 Template: loom
 Version: 1.0.0
 */
+.ccf-form-wrapper .field label.main-label {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px); }
+
 @font-face {
   font-family: 'font-awesome-social';
   src: url("../fonts/font-awesome-social.eot?69939564");
@@ -745,6 +752,21 @@ body {
     background: #df1074 !important;
     color: #fff !important;
     text-decoration: none; }
+
+.ccf-form-wrapper .form-title {
+  display: none; }
+
+.ccf-form-wrapper .field {
+  margin-bottom: .5em; }
+  @media only screen and (min-width: 992px) {
+    .ccf-form-wrapper .field.user_name, .ccf-form-wrapper .field.user_email, .ccf-form-wrapper .field.user_subject {
+      display: inline-block;
+      width: 32.9%; } }
+
+.ccf-form-wrapper .ccf-form-complete {
+  transition: background-color 0.5s ease;
+  padding: .5em;
+  background-color: #fef0f7; }
 
 /**
  * Revolution Slider
