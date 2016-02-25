@@ -674,7 +674,8 @@ h6 {
  * Basic typography style for copy text
  */
 body {
-  color: #2d2d2d; }
+  color: #2d2d2d;
+  font: normal 125%/1.4 "Raleway", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
 /**
  * Clear inner floats
